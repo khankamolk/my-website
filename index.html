@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+    <head>
+        <meta name="description" content="Portfolio" />
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="shortcut icon" type="image/x-icon" href="./images/header.png" />
+        <title>Khankamol Chor Kongrukgreatiyos</title>
+    </head>
+
+    <body class="light">
+
+        <!-- Navigation Bar -->
+        <header>
+            <nav class="navbar center">
+                <ul class="nav__links center">
+                    <li class="nav__item">
+                        <a class="link nav__link" href="#education">Education</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="link nav__link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="link nav__link" href="#footer">Contact</a>
+                    </li>
+                     <!-- TODO: add link to resume -->
+                     <button id="mode-toggle">Switch Mode</button>
+                  </ul>
+            </nav>
+        </header>
+
+        <br>
+
+        <main>
+            <div id="about" class="center">
+                <h1 class="about__title" id="hero">
+                    Hello! My name is <br>
+                    <span class="about__name">Khankamol Chor</span>.
+                    <br>
+                </h1>
+                <div class="about__desc">
+                    software engineer studying cs + statistics @ UC Berkeley
+                </div>
+                <br>
+                <button class="center" onclick="myFunction()">
+                    <span class="btn btn--outline">click me</span>
+                </button>
+            </div>
+
+            <script>
+                const hero = document.getElementById('hero');
+                function myFunction() {
+                    hero.style.color = '#9847fa';
+                }
+            </script>
+
+            <!-- Education/Relevant coursework -->
+            <section id="education" class="section education">
+                <div style="margin-right:100px;">
+                    <h2 class="section__title">Education</h2>
+                    <div class="education__desc center"> 
+                        <img src="./images/berkeley_seal.png" alt="UC Berkeley Seal" style="width:100px; margin-right:20px;">
+                        <div>
+                            <p><b>University of California, Berkeley </b></p>
+                            <p>Expected graduation May 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="education__desc" style="flex-direction:column;">
+                    <h4>Relevant Coursework</h4> <br>
+                    <p> CS 61B - Data structures <br>
+                        CS 61A - The Structure and Interpretation of Computer Programs <br>
+                        DATA C100 - Principles & Techniques of Data Science <br>
+                        STAT 33B - Introduction to Advanced Programming in R <br>
+                        MATH 54 - Linear Algebra and Differential Equations <br>
+                        DATA C8 - Foundations of Data Science <br>
+                    </p>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section id="projects" class="section projects">
+                <h2 class="section__title">Projects</h2>
+                <div class="projects__grid">
+                    <div class="project">
+                        <h3 class="project__header">Ants vs. Some Bees</h3> 
+                        <p class="project__description">
+                            A spin off of Popcap’s game Plants vs. Zombies. 
+                            Implemented using an object-oriented programming paradigm.
+                        </p>
+                        <ul class="project__skills">
+                            <li class="project__skills-item">Python</li>
+                        </ul>       
+                    </div>     
+                    <div class="project">
+                        <h3 class="project__header">Scheme Interpretor</h3> 
+                        <p class="project__description">
+                            Developed an interpreter for a subset of the Scheme language 
+                            that tokenizes through parsed Scheme inputs. 
+                        </p>
+                        <ul class="project__skills">
+                            <li class="project__skills-item">Python</li>
+                        </ul>       
+                    </div>  
+                    <div class="project">
+                        <h3 class="project__header">Movie classifier</h3> 
+                        <p class="project__description">
+                            Built a classification model to predict the genre 
+                            of a movie using k-nearest-neighbor
+                        </p>
+                        <ul class="project__skills">
+                            <li class="project__skills-item">Python</li>
+                            <li class="project__skills-item">Pandas</li>
+                        </ul>       
+                    </div>  
+                    <div class="project">
+                        <h3 class="project__header">Doubled Ended Queue</h3> 
+                        <p class="project__description">
+                            Built the two implementations of a “Double Ended Queue”: 
+                            one powered by a Linked List, and one by a resizing array.
+                        </p>
+                        <ul class="project__skills">
+                            <li class="project__skills-item">Java</li>
+                        </ul>       
+                    </div>  
+                </div>
+            </section>
+            
+			<!--Footer/Contact-->
+			<section id="footer" class="section footer">
+				<div class="center">
+					<a class="link footer__link" href="https://www.linkedin.com/in/khankamolk/">LinkedIn</a>
+					<span>•</span>
+					<a class="link footer__link" href="https://github.com/khankamolk">Github</a>
+					<span>•</span>
+					<a class="link footer__link" href="mailto:khankamolk@berkeley.edu" target="_blank">khankamolk@berkeley.edu</a>
+				</div>
+				<div class="center">
+					<p id="copyright">Coded by Khankamol Chor Kongrukgreatiyos 2022</p>
+				</div>
+			</section>
+
+        </main>
+    </body>
+</html>

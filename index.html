@@ -6,10 +6,11 @@
         <meta name="description" content="Portfolio" />
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="shortcut icon" type="image/x-icon" href="./images/header.png" />
+        <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
         <title>Khankamol Chor Kongrukgreatiyos</title>
     </head>
 
-    <body class="light">
+    <body class="light" id="top">
 
         <!-- Navigation Bar -->
         <header>
@@ -24,9 +25,11 @@
                     <li class="nav__item">
                       <a class="link nav__link" href="#footer">Contact</a>
                     </li>
-                     <!-- TODO: add link to resume -->
-                     <button id="mode-toggle">Switch Mode</button>
                   </ul>
+                  
+                  <button type="button" aria-label="toggle theme" class="btn btn--icon">
+                    <i id="btn-theme" class="fas fa-moon"></i>
+                  </button>
             </nav>
         </header>
 
@@ -43,17 +46,18 @@
                     software engineer studying cs + statistics @ UC Berkeley
                 </div>
                 <br>
-                <button class="center" onclick="myFunction()">
-                    <span class="btn btn--outline">click me</span>
-                </button>
+                <div class="center">
+                    <a class="btn btn--outline" href="https://docs.google.com/document/d/1YGdZ06DxZBd-ni9TE1uT9FxP8CPLak7g/edit?usp=sharing&ouid=116217881902884063033&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">
+                        Resume
+                        </a>
+                    <a href="https://github.com/khankamolk" target="_blank" rel="noopener noreferrer" aria-label="github" class="link link--icon">
+                        <i aria-hidden="true" class="fab fa-github grow"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/khankamolk" target="_blank" rel="noopener noreferrer" aria-label="linkedin" class="link link--icon">
+                        <i aria-hidden="true" class="fab fa-linkedin grow"></i>
+                      </a>
+                </div>
             </div>
-
-            <script>
-                const hero = document.getElementById('hero');
-                function myFunction() {
-                    hero.style.color = '#9847fa';
-                }
-            </script>
 
             <!-- Education/Relevant coursework -->
             <section id="education" class="section education">
@@ -126,21 +130,30 @@
                     </div>  
                 </div>
             </section>
-            
-			<!--Footer/Contact-->
-			<section id="footer" class="section footer">
-				<div class="center">
-					<a class="link footer__link" href="https://www.linkedin.com/in/khankamolk/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-					<span>•</span>
-					<a class="link footer__link" href="https://github.com/khankamolk" target="_blank" rel="noopener noreferrer">Github</a>
-					<span>•</span>
-					<a class="link footer__link" href="mailto:khankamolk@berkeley.edu" target="_blank" rel="noopener noreferrer">khankamolk@berkeley.edu</a>
-				</div>
-				<div class="center">
-					<p id="copyright">Coded by Khankamol Chor Kongrukgreatiyos 2022</p>
-				</div>
-			</section>
-
         </main>
+
+        <!--Scroll to top -->
+        <div class="scroll-container">
+            <div class="scroll-top">
+                <a aria-label="Scroll up" href="#top">
+                <i aria-hidden="true" class="fas fa-arrow-up grow"></i>
+                </a>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+
+        <!--Footer/Contact-->
+        <section id="footer" class="section footer">
+            <div class="center">
+                <a class="link footer__link" href="https://www.linkedin.com/in/khankamolk/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <span>•</span>
+                <a class="link footer__link" href="https://github.com/khankamolk" target="_blank" rel="noopener noreferrer">Github</a>
+                <span>•</span>
+                <p class="link footer__link">khankamolk@berkeley.edu</p>
+            </div>
+            <div class="center">
+                <p id="copyright">Coded by Khankamol Chor Kongrukgreatiyos 2022</p>
+            </div>
+        </section>
     </body>
 </html>
